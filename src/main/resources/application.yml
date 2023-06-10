@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: local
+  jwt:
+    secretKey: sampleKey
+    expire-length: 1800000
+
+server:
+  port: 7700
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
