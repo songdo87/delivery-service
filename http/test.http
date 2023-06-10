@@ -1,0 +1,38 @@
+### 회원가입
+POST http://localhost:7700/api/users
+Content-Type: application/json
+
+{
+  "userId": "parkyh",
+  "password": "1234567890aQ!@#",
+  "userName": "박용현",
+  "address": "옥련동",
+  "addressDetail": "112동 701호",
+  "userStatus" : "NORMAL"
+}
+
+### 로그인
+POST http://localhost:7700/api/users/login
+Content-Type: application/json
+
+{
+  "userId": "parkyh",
+  "password": "1234567890aQ!@#"
+}
+
+### 배송조회
+GET http://localhost:7700/api/delivery/history?startDate=20230606&endDate=20230608
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODYzODc1NDMsImV4cCI6MTY4NjM4OTM0M30.tFeZ9_XF4Sb2DcAJ5bPtC6YJ7pswCeZpznRQL-vVa68
+
+### 배달 주소 수정
+PUT http://localhost:7700/api/delivery/11
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODYzODc1NDMsImV4cCI6MTY4NjM4OTM0M30.tFeZ9_XF4Sb2DcAJ5bPtC6YJ7pswCeZpznRQL-vVa68
+
+{
+  "orderShopAddress": "인천시 남동구 예술로",
+  "orderShopAddressDetail": "금호 빌라 105호"
+}
+
+###
