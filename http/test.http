@@ -21,14 +21,14 @@ Content-Type: application/json
 }
 
 ### 배송조회
-GET http://localhost:7700/api/delivery/history?startDate=20230606&endDate=20230608
+GET http://localhost:7700/api/delivery?startDate=20230606&endDate=20230608
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODYzODc1NDMsImV4cCI6MTY4NjM4OTM0M30.tFeZ9_XF4Sb2DcAJ5bPtC6YJ7pswCeZpznRQL-vVa68
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODY0ODQzOTEsImV4cCI6MTY4NjQ4NjE5MX0.RpCtPF7zcslFVkdJ2a6o51UwUvfs8sxLQ_lX09P26wA
 
 ### 배달 주소 수정
 PUT http://localhost:7700/api/delivery/11
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODYzODc1NDMsImV4cCI6MTY4NjM4OTM0M30.tFeZ9_XF4Sb2DcAJ5bPtC6YJ7pswCeZpznRQL-vVa68
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwYXJreWgiLCJpYXQiOjE2ODY0ODQzOTEsImV4cCI6MTY4NjQ4NjE5MX0.RpCtPF7zcslFVkdJ2a6o51UwUvfs8sxLQ_lX09P26wA
 
 {
   "orderShopAddress": "인천시 남동구 예술로",

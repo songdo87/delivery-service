@@ -25,7 +25,7 @@ public class DeliveryController {
     /**
      * 배송조회
      */
-    @GetMapping("/history")
+    @GetMapping
     public ResponseEntity<List<DeliverResponseDto>> findAllHistory(DeliveryConditionDto condition, @AuthenticationPrincipal User user) {
         return ResponseEntity.ok().body(
                 deliveryService.findAllHistory(user.getUserId(), condition)

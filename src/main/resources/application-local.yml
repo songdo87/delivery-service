@@ -12,10 +12,10 @@ spring:
     hikari:
       minimum-idle: 10
       maximum-pool-size: 50
-#  sql:
-#    init:
-#      mode: always
-#      platform: postgresql
+  sql:
+    init:
+      mode: always
+      platform: postgresql
 
   jpa:
     hibernate:
